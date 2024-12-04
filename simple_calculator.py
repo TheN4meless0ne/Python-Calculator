@@ -1,4 +1,4 @@
-# Function to get numbers for equation
+# Functions to get numbers for equation
 def getNumber(prompt):
     while True:
         try:
@@ -11,12 +11,12 @@ def getNumbers():
     num2 = getNumber("Enter second number: ")
     return num1, num2
 
-# Lambda functions for calculations
+# Functions for calculations
 add = lambda num1, num2: print(num1 + num2)
 subtract = lambda num1, num2: print(num1 - num2)
 multiply = lambda num1, num2: print(num1 * num2)
 
-# Normal function for division, as it requires a check for division by zero
+# Divide function needs to check for division by zero
 def divide(num1, num2):
     while num2 == 0:
         print("Cannot divide by zero. Please enter a new number.")
